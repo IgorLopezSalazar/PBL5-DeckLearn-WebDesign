@@ -1,0 +1,22 @@
+*, *::before, *::after{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --decklearn-green: #46B6A0;
+    --button-green: #01CDA9;
+
+    --input-underline: #8D8D8D;
+
+    --custom-button-bg: #01CDA9;
+    --custom-button-border: #01CDA9;
+    --custom-button-color: #FFFFFF;
+
+    --custom-button-sec-bg: #FFFFFF;
+    --custom-button-sec-border: #01CDA9;
+    --custom-button-sec-color: #969090;
+
+    --button-radius: 1.3rem;
+    --button-font-size: 1.3rem;
+}
