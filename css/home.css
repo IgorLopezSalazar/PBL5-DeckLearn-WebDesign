@@ -5,12 +5,6 @@
     --web-bg: #FFFFFF;
 }
 
-@font-face {
-    font-family: 'Sans Forgetica Regular';
-    src: local('Sans Forgetica Regular'),
-         local('Sans-Forgetica-Regular'),
-         url('SansForgetica-Regular.woff') format('woff');
-}
 
 body {
     height: 100vh;
@@ -76,15 +70,12 @@ aside > header > img {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid #959595;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .search-bar {
     min-height: 3rem;
-    margin: 0;
     width: 40%;
     border-radius: 4rem;
     border: 1px solid #ddd;
@@ -92,19 +83,8 @@ aside > header > img {
     background-image: url('../images/search.svg');
     background-position: 10px 12px;
     background-repeat: no-repeat;
+    margin-bottom: 12px;
     padding-left: 3rem;
-}
-
-.top-nav__profile {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.top-nav__profile > img {
-    height: 3rem;
-    border-radius: 50%;
 }
 
 .content {
