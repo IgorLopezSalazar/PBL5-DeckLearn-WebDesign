@@ -1,15 +1,20 @@
 window.onload = function(){
-   
-    let selectables = document.getElementById("selectable");
-
+    let selectables = document.getElementsByClassName("selectable");
     for (let index = 0; index < selectables.length; index++) {
-        selectables[index].addEventListener('click', selecter.bind(null, i));
+        selectables[index].addEventListener('click', selecter.bind(null, index));
     }
-
+    selectables[0].classList.add("selected");
 }
 
 function selecter(id) {
-    var article = document.getElementsByTagName("article");
-    article[id].classList.toggle("selected");
-    clearTimeout(timer);
+    let selectables = document.getElementsByClassName("selectable");
+    reset(selectables)
+    selectables[id].classList.add("selected");
 }
+
+function reset(selectables) {
+    for (let index = 0; index < selectables.length; index++) {
+        selectables[index].classList.remove("selected");        
+    }
+}
+
