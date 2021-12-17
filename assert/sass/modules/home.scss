@@ -1,0 +1,46 @@
+@import '../variables/variables';
+@import '../objects/card.scss';
+
+.card-section {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+}
+
+.card-section > h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    font-size: $title-font-size;
+    font-weight: normal;
+    border-bottom: 1px solid #959595;
+}
+
+@media (min-width: 762px){
+    .card-section {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .card-section {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+    }
+}   
+
+@media (min-width: 1300px){
+    .card-section {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+    }
+}

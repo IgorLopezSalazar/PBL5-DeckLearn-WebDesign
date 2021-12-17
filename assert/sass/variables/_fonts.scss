@@ -1,0 +1,11 @@
+*, *::before, *::after{
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Sans Forgetica Regular';
+    src: local('Sans Forgetica Regular'),
+         local('Sans-Forgetica-Regular'),
+         url('/font/SansForgetica-Regular.woff') format('woff');
+}

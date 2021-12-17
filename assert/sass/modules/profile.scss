@@ -1,25 +1,4 @@
-*, *::before, *::after{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-
-:root {
-    --decklearn-green: #46B6A0;
-    --button-green: #01CDA9;
-
-    --input-underline: #8D8D8D;
-
-    --custom-button-bg: #01CDA9;
-    --custom-button-border: #01CDA9;
-    --custom-button-color: #FFFFFF;
-
-    --custom-button-sec-bg: #FFFFFF;
-    --custom-button-sec-border: #01CDA9;
-    --custom-button-sec-color: #969090;
-
-    --button-radius: 1.3rem;
-    --button-font-size: 1.3rem;
-}
+@import '../variables/variables';
 
 *{
     margin: 0;
@@ -31,7 +10,7 @@
 }
 
 .profile__top-title{
-    border-bottom: var(--input-underline) 1px solid;
+    border-bottom: $input-underline 1px solid;
     padding: 0.1rem;
 }
 
@@ -60,19 +39,19 @@
 
 .button-editProfile {
     text-decoration: none;
-    background-color: var(--custom-button-bg);
-    border-radius: var(--button-radius);
-    color: var(--custom-button-color);
+    background-color: $custom-button-bg;
+    border-radius: $button-radius;
+    color: $custom-button-color;
     padding: 0.3rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    font-size: var(--button-font-size);
+    font-size: $button-font-size;
     cursor: pointer;
 }
 
 .user-name h3{
     font-weight: normal;
-    color: var(--input-underline);
+    color: $input-underline;
 }
 
 .user-follower{
@@ -89,7 +68,7 @@
 }
 
 .profile-nav{
-    border-bottom: var(--input-underline) 1px solid;
+    border-bottom: $input-underline 1px solid;
     display: flex;
     justify-content: space-between;
 }
@@ -99,7 +78,7 @@
 }
 
 .selected{
-    border-bottom: var(--decklearn-green) solid 3px;
+    border-bottom: $decklearn-green solid 3px;
 }
 
 @media (min-width: 762px){

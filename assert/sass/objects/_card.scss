@@ -1,28 +1,4 @@
-:root{
-    --title-font-size: 1.5rem;
-    --width-size: calc(100% - 6rem);
-
-    --card-section-radius: 0.5rem;
-    --card-section-button-color: #01CDA9;
-}
-
-.card-section {
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
-}
-
-.card-section > h2 {
-    display: flex;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1rem;
-
-    font-size: var(--title-font-size);
-    font-weight: normal;
-    border-bottom: 1px solid #959595;
-}
+@import '../variables/variables';
 
 .card-section__list {
     display: grid;
@@ -31,7 +7,7 @@
 }
 
 .card {
-    border-radius: var(--card-section-radius);
+    border-radius: $card-section-radius;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
@@ -51,7 +27,7 @@
     height: 12.5em;
     object-fit: cover;
     width: 100%;
-    border-radius: var(--card-section-radius) var(--card-section-radius) 0 0;
+    border-radius: $card-section-radius $card-section-radius 0 0;
 }
 
 .card-content > span{
@@ -72,8 +48,8 @@
     height: 2.5rem;
     justify-content: center;
 
-    border-radius: 0 0 var(--card-section-radius) var(--card-section-radius);
-    background-color: var(--card-section-button-color);
+    border-radius: 0 0 $card-section-radius $card-section-radius;
+    background-color: $card-section-button-color;
 
     align-items: center;
     text-align: center;
@@ -87,37 +63,16 @@
     .card-section__list{
         grid-template-columns: 1fr 1fr;
     }
-
-    .card-section {
-        margin-left: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-right: 3rem;
-    }
 }
 
 @media (min-width: 1024px){
     .card-section__list{
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    .card-section {
-        margin-left: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-right: 3rem;
-    }
-}   
+}
 
 @media (min-width: 1300px){
     .card-section__list{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .card-section {
-        margin-left: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-right: 3rem;
     }
 }

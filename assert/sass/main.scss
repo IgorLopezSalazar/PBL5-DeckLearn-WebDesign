@@ -1,19 +1,4 @@
-
-:root {
-    --decklearn-green: #46B6A0;
-
-    --web-bg: #FFFFFF;
-
-    --scroll-bar-color: #01CDA9;
-    --scroll-bar-border-color: #d6d6d6;
-}
-
-@font-face {
-    font-family: 'Sans Forgetica Regular';
-    src: local('Sans Forgetica Regular'),
-         local('Sans-Forgetica-Regular'),
-         url('SansForgetica-Regular.woff') format('woff');
-}
+@import 'variables/variables';
 
 /* BARRA SCROLL PERSONALIZADA */
 ::-webkit-scrollbar {
@@ -21,7 +6,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--scroll-bar-color);
+	background: $scroll-bar-color;
 	border-radius: 5px;
     border-right: 2px solid white;
 }
@@ -47,7 +32,7 @@ body {
 }
 
 .left-nav {
-    background-color: var(--decklearn-green);
+    background-color: $decklearn-green;
     padding: 1rem;
     grid-area: bottom-nav;
     flex-direction: row;
@@ -104,7 +89,7 @@ body {
 }
 
 .top-nav {
-    background-color: var(--web-bg);
+    background-color: $web-bg;
     height: 100%;
     display: flex;
     align-items: center;
@@ -120,7 +105,7 @@ body {
     border-radius: 4rem;
     border: 1px solid #ddd;
 
-    background-image: url('../images/search.svg');
+    background-image: url('../../images/search.svg');
     background-position: 10px 12px;
     background-repeat: no-repeat;
     padding-left: 3rem;
@@ -140,17 +125,10 @@ body {
 
 .content-container {
     height: 100%;
-    background-color: var(--web-bg);
+    background-color: $web-bg;
     overflow-y: scroll;
     overflow-x: auto;
 }
-
-/* .content {
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
-} */
 
 @media (min-width: 550px){
 
