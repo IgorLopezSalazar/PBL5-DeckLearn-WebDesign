@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "python.defaultInterpreterPath": "E:\\Users\\giorg\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "nested",
+            "extensionName": ".css",
+            "savePath": "~/../css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        "last 2 Chrome versions",
+        "last 2 firefox versions"
+    ]
+}

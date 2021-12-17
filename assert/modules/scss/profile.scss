@@ -1,4 +1,4 @@
-@import '../variables/variables';
+@import '../../variables/variables';
 
 *{
     margin: 0;
@@ -14,27 +14,31 @@
     padding: 0.1rem;
 }
 
-.profile-data__img-user{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 1rem;
-}
-
-.profile-data__image{
-    padding: 1rem;
-    object-fit: cover;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-}
-
 .profile-data{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
+
+    &__img-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    &__image {
+        padding: 1rem;
+        object-fit: cover;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+
+    &__button {
+        padding-bottom: 2rem;
+    }
 }
 
 .button-editProfile {
@@ -49,58 +53,59 @@
     cursor: pointer;
 }
 
-.user-name h3{
-    font-weight: normal;
-    color: $input-underline;
+.user-name {
+    h3{
+        font-weight: normal;
+        color: $input-underline;
+    }
 }
 
 .user-follower{
     display: flex;
     width: 100%;
     justify-content: space-between;
-}
-.user-follower p span{
-    font-weight: bold;
-}
 
-.profile-data__button{
-    padding-bottom: 2rem;
+    p{
+        span{
+            font-weight: bold;
+        }
+    }
 }
 
 .profile-nav{
     border-bottom: $input-underline 1px solid;
     display: flex;
     justify-content: space-between;
-}
 
-.profile-nav p{
-    height: 100%;
+    p{
+        height: 100%;
+    }
 }
 
 .selected{
     border-bottom: $decklearn-green solid 3px;
 }
 
-@media (min-width: 762px){
+@media (min-width: screen-size(medium)){
     .profile-data{
         flex-direction: row;
         align-items: flex-end;
-    }
 
-    .profile-data__img-user{
-        flex-direction: row;
-    }
+        &__img-user {
+            flex-direction: row;
+        }
 
-    .profile-data__button{
-        display: flex;
-        padding-bottom: 1rem;
+        &__button {
+            display: flex;
+            padding-bottom: 1rem;
+        }
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: screen-size(large)){
     
 }   
 
-@media (min-width: 1300px){
+@media (min-width: screen-size(extra-large)){
     
 }
