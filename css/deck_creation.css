@@ -1,0 +1,213 @@
+:root{
+    --title-font-size: 1.5rem;
+    --title-h4-font-size: 1.3rem;
+    --data-font-size: 1rem;
+    --categories-font-size: 0.7rem;
+    --width-size: calc(100% - 6rem);
+
+    --button-radius: 1.3rem;
+
+    --card-section-radius: 0.5rem;
+    --card-section-button-color: #01CDA9;
+    --custom-button-font-color: #FFFFFF;
+}
+
+.content {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+}
+
+.deck-creation-section > h2 {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    font-size: var(--title-font-size);
+    font-weight: normal;
+    border-bottom: 1px solid #959595;
+}
+
+.deck-creation-section__list {
+    display: grid;
+    gap: 2rem;
+}
+
+.deck-creation > div > h4, .card-creation > h4 {
+    margin: 0;
+    margin-bottom: 0.2rem;
+
+    font-size: var(--title-h4-font-size);
+    font-weight: normal;
+}
+
+.card-creation__data {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #959595;
+    margin-left: 1.5rem;
+    padding-bottom: 0.3rem;
+
+    width: calc(100% - 1.5rem);
+    resize: none;
+
+    font-size: var(--data-font-size);;
+}
+
+.card-creation > label {
+    margin-left: 1rem;
+}
+
+.deck-creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.creation-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem;
+    padding-left: 0.6rem;
+
+    font-size: var(--data-font-size);
+    border: 0;
+    border-bottom: 1px solid var(--card-section-button-color);
+    border-radius: var(--button-radius);
+    
+    background-color: var(--card-section-button-color);
+    color: white;
+}
+
+.creation-button > img {
+    width: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+.add-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.custom-button {
+    text-align: center;
+    
+    border-radius: var(--button-radius);
+    border: 0;
+    height: fit-content;
+    font-size: var(--data-font-size-size);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    color: var(--custom-button-font-color);
+    background-color: var(--card-section-button-color);
+
+    white-space: nowrap;
+}
+
+.deck-categories {
+    margin-top: 3rem;
+}
+
+.create-deck {
+    display: flex;
+    justify-content: center;
+}
+
+.create-deck__button {
+    display: flex;
+    justify-content: center;
+    
+    width: 40%;
+    margin-top: 3rem;
+    padding: 0.5rem;
+
+    border-radius: var(--button-radius);
+    border: 0;
+    font-size: var(--button-font-size);
+
+    color: var(--custom-button-font-color);
+    background-color: var(--card-section-button-color);
+}
+
+.categories-bar {
+    width: 100%;
+}
+
+.deck-categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.deck-categories__list > button {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #959595;
+    border-radius: var(--button-radius);
+
+    padding: 0.2rem;
+    font-size: var(--categories-font-size);
+}
+
+.deck-categories__list > button > img {
+    width: 1rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+@media (min-width: 762px){
+S
+    .categories-bar {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px){
+    .create-deck__button{
+        width: 33%;
+    }
+
+    .deck-creation-section__list{
+        grid-template-columns: 3fr 2fr min-content;
+    }
+
+    .categories-bar {
+        width: 40%;
+    }
+}   
+
+@media (min-width: 1300px){
+
+    .create-deck__button{
+        width: 33%;
+    }
+
+    .deck-creation-section__list{
+        grid-template-columns: 3fr 2fr min-content;
+    }
+
+    .categories-bar {
+        width: 40%;
+    }
+}

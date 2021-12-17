@@ -1,44 +1,9 @@
-/* BARRA SCROLL PERSONALIZADA */
-
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-	background: var(--scroll-bar-color);
-	border-radius: 5px;
-    border-right: 2px solid white;
-}
-
-/*.content::-webkit-scrollbar {
-	width: 15px;
-}
-
-.content::-webkit-scrollbar-thumb {
-	background: var(--scroll-bar-color);
-	border-radius: 5px;
-    border-right: 7px solid var(--scroll-bar-border-color);
-}*/
-
-.card-content > span::-webkit-scrollbar{
-    width: 5px;
-}
-
-.card-content > span::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    border-right: 0;
-}
-
-/* BARRA SCROLL PERSONALIZADA */
-
 :root{
     --title-font-size: 1.5rem;
     --width-size: calc(100% - 6rem);
 
     --card-section-radius: 0.5rem;
     --card-section-button-color: #01CDA9;
-    --scroll-bar-color: #01CDA9;
-    --scroll-bar-border-color: #d6d6d6;
 }
 
 .card-section {
