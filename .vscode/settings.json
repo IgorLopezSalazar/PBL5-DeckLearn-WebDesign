@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Default Dark+",
-    "python.defaultInterpreterPath": "E:\\Users\\giorg\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -14,7 +13,7 @@
         {
             "format": "nested",
             "extensionName": ".css",
-            "savePath": "~/../css"
+            "savePath": "~/../css" 
         }
     ],
     "liveSassCompile.settings.generateMap": false,

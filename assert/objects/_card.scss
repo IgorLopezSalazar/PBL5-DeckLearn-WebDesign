@@ -1,9 +1,13 @@
 @import '../variables/variables';
 
-.card-section__list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.card-section{
+    padding-top: 1rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 .card {
@@ -61,19 +65,19 @@
     }
 }
 
-@media (min-width: screen-size(medium)){
-    .card-section__list{
+@media (min-width: screen-size(medium)) {
+    .card-section__list {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: screen-size(large)){
+@media (min-width: screen-size(large)) {
     .card-section__list{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: screen-size(extra-large)){
+@media (min-width: screen-size(extra-large)) {
     .card-section__list{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

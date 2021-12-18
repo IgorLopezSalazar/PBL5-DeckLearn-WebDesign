@@ -6,10 +6,12 @@
   font-family: 'Sans Forgetica Regular';
   src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
 
-.card-section__list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem; }
+.card-section {
+  padding-top: 1rem; }
+  .card-section__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; }
 
 .card {
   border-radius: 0.5rem;
