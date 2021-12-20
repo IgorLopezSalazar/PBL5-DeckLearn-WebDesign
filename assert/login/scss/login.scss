@@ -1,31 +1,9 @@
-*, *::before, *::after{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-
-:root {
-    --decklearn-green: #46B6A0;
-    --button-green: #01CDA9;
-
-    --input-underline: #8D8D8D;
-
-    --custom-button-bg: #01CDA9;
-    --custom-button-border: #01CDA9;
-    --custom-button-color: #FFFFFF;
-
-    --custom-button-sec-bg: #FFFFFF;
-    --custom-button-sec-border: #01CDA9;
-    --custom-button-sec-color: #969090;
-
-    --button-radius: 1.3rem;
-    --button-font-size: 1.3rem;
-}
+@import '../../variables/variables';
 
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +18,7 @@ main {
 }
 
 .left-part {
-    background-color: var(--decklearn-green);
+    background-color: $decklearn-green;
     height: 100%;
     max-height: 100%;
 }
@@ -68,7 +46,7 @@ main {
 
 .custom-input {
     border: 0;
-    border-bottom: 1px solid var(--input-underline);
+    border-bottom: 1px solid $input-underline;
     outline: 0;
     font-size: 1.3rem;
 }
@@ -79,12 +57,12 @@ main {
 }
 
 .custom-submit {
-    background-color: var(--custom-button-bg);
+    background-color: $custom-button-bg;
     border: none;
-    border-radius: var(--button-radius);
-    color: var(--custom-button-color);
+    border-radius: $button-radius;
+    color: $custom-button-color;
     padding: .5rem;
-    font-size: var(--button-font-size);
+    font-size: $button-font-size;
     font-weight: 100;
     cursor: pointer;
 }
@@ -92,18 +70,18 @@ main {
 .custom-button {
     text-decoration: none;
     text-align: center;
-    background-color: var(--custom-button-sec-bg);
-    border: 2px solid var(--custom-button-sec-border);
-    border-radius: var(--button-radius);
+    background-color: $custom-button-sec-bg;
+    border: 2px solid $custom-button-sec-border;
+    border-radius: $button-radius;
     height: fit-content;
-    font-size: var(--button-font-size);
+    font-size: $button-font-size;
     font-weight: 100;
     padding: .5rem;
-    color: var(--custom-button-sec-color);
+    color: $custom-button-sec-color;
 }
 
 .forgot-password {
     text-align: center;
     text-decoration: none;
-    color: var(--button-green);
+    color: $button-green;
 }
