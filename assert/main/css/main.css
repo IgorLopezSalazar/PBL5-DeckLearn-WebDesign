@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
 .card-section {
-  padding-top: 1rem; }
+  padding-bottom: 2rem; }
   .card-section__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem; }
+    gap: 2rem;
+    padding-top: 1rem; }
+  .card-section:last-child {
+    padding-bottom: 0; }
 
 .card {
   border-radius: 0.5rem;
@@ -36,8 +35,7 @@
   text-align: center;
   width: calc(100% - 2rem);
   border-bottom: 1px solid #959595;
-  margin-left: 1rem;
-  margin-right: 1rem; }
+  margin: 1.17rem 1rem 1.17rem 1rem; }
 
 .card-content > img {
   box-sizing: border-box;
@@ -163,7 +161,7 @@ body {
   width: 50%;
   border-radius: 4rem;
   border: 1px solid #ddd;
-  background-image: url("../../images/search.svg");
+  background-image: url("../../../images/search.svg");
   background-position: 10px 12px;
   background-repeat: no-repeat;
   padding-left: 3rem; }
@@ -173,6 +171,9 @@ body {
   background-color: #FFFFFF;
   overflow-y: scroll;
   overflow-x: auto; }
+
+.content {
+  padding: 2rem 3rem 2rem 3rem; }
 
 @media (min-width: 550px) {
   body {

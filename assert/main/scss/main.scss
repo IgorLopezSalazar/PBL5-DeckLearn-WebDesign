@@ -129,7 +129,7 @@ body {
     border-radius: 4rem;
     border: 1px solid $search-bar-border-color;
 
-    background-image: url('../../images/search.svg');
+    background-image: url($search-bar-image);
     background-position: 10px 12px;
     background-repeat: no-repeat;
     padding-left: 3rem;
@@ -140,6 +140,10 @@ body {
     background-color: $web-bg;
     overflow-y: scroll;
     overflow-x: auto;
+}
+
+.content{
+    padding: 2rem 3rem 2rem 3rem;
 }
 
 

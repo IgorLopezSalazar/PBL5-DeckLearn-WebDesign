@@ -1,12 +1,16 @@
-@import '../variables/variables';
-
 .card-section{
-    padding-top: 1rem;
+    padding-bottom: 2rem;
+    // padding-top: 2rem;
 
     &__list {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    &:last-child{
+        padding-bottom: 0;
     }
 }
 
@@ -40,8 +44,7 @@
         text-align: center;
         width: calc(100% - 2rem);
         border-bottom: 1px solid #959595;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1.17rem 1rem 1.17rem 1rem;
     }
 
     > img {
@@ -61,7 +64,7 @@
         overflow-x: none;
     
         margin-left: 1rem;
-        margin-right: 1rem; 
+        margin-right: 1rem;
     }
 }
 

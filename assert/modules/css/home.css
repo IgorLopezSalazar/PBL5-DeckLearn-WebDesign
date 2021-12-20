@@ -1,37 +1,21 @@
 @font-face {
   font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
-.card-section {
-  margin-left: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 1.5rem; }
-  .card-section > h2 {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: normal;
-    border-bottom: 1px solid #959595; }
+.card-section > h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  border-bottom: 1px solid #959595; }
 
 @media (min-width: 762px) {
   .card-section {
-    margin-left: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 3rem; } }
+    padding: 3rem, 2rem, 2rem, 3rem; } }
 
 @media (min-width: 1024px) {
   .card-section {
-    margin-left: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 3rem; } }
+    padding: 3rem, 2rem, 2rem, 3rem; } }
 
 @media (min-width: 1300px) {
   .card-section {
-    margin-left: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 3rem; } }
+    padding: 3rem, 2rem, 2rem, 3rem; } }

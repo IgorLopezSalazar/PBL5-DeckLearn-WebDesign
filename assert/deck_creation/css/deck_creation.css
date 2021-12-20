@@ -1,18 +1,11 @@
 @font-face {
   font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
-
-.content {
-  margin-left: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 1.5rem; }
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
 .deck-creation-section > h2 {
   display: flex;
   text-align: center;
   margin: 0;
-  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: normal;
   border-bottom: 1px solid #959595; }
@@ -32,7 +25,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem; }
+  gap: 1rem;
+  padding-top: 1rem; }
   .card-creation__data {
     outline: none;
     border: 0;
@@ -50,7 +44,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem; }
+  gap: 1rem;
+  padding-top: 1rem; }
 
 .creation-button {
   display: flex;
@@ -90,12 +85,12 @@
   white-space: nowrap; }
 
 .deck-categories {
-  margin-top: 3rem; }
+  padding-top: 3rem; }
   .deck-categories__list {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 1rem;
+    padding-top: 1rem;
     gap: 1rem; }
     .deck-categories__list > button {
       display: flex;
@@ -111,12 +106,12 @@
 
 .create-deck {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 3rem; }
   .create-deck__button {
     display: flex;
     justify-content: center;
     width: 40%;
-    margin-top: 3rem;
     padding: 0.5rem;
     border-radius: 1.3rem;
     border: 0;

@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.content__profile{
-    padding: 1rem;
-}
-
 .profile__top-title{
     border-bottom: $input-underline 1px solid;
     padding: 0.1rem;
@@ -98,6 +94,12 @@
         &__button {
             display: flex;
             padding-bottom: 1rem;
+        }
+    }
+
+    .user-name {
+        h3{
+            text-align: left;
         }
     }
 }

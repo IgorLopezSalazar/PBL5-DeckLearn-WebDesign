@@ -1,13 +1,10 @@
 @font-face {
   font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
 * {
   margin: 0;
   box-sizing: border-box; }
-
-.content__profile {
-  padding: 1rem; }
 
 .profile__top-title {
   border-bottom: #8D8D8D 1px solid;
@@ -73,4 +70,6 @@
       flex-direction: row; }
     .profile-data__button {
       display: flex;
-      padding-bottom: 1rem; } }
+      padding-bottom: 1rem; }
+  .user-name h3 {
+    text-align: left; } }

@@ -1,12 +1,8 @@
 @import '../../variables/variables';
 
 .card-section {
-    @include margins(1.5rem, 2rem, 2rem, 1.5rem);
-
     > h2 {
-        text-align: center;
         margin: 0;
-        margin-bottom: 1rem;
 
         font-size: $title-font-size;
         font-weight: normal;
@@ -16,18 +12,18 @@
 
 @media (min-width: screen-size(medium)){
     .card-section {
-        @include margins(3rem, 2rem, 2rem, 3rem);
+        padding: 3rem, 2rem, 2rem, 3rem;
     }
 }
 
 @media (min-width: screen-size(large)){
     .card-section {
-        @include margins(3rem, 2rem, 2rem, 3rem);
+        padding: 3rem, 2rem, 2rem, 3rem;
     }
 }   
 
 @media (min-width: screen-size(extra-large)){
     .card-section {
-        @include margins(3rem, 2rem, 2rem, 3rem);
+        padding: 3rem, 2rem, 2rem, 3rem;
     }
 }

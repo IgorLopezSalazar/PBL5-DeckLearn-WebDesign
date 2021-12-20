@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Sans Forgetica Regular';
-  src: local("Sans Forgetica Regular"), local("Sans-Forgetica-Regular"), url("/font/SansForgetica-Regular.woff") format("woff"); }
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
 body {
   margin: 0;
