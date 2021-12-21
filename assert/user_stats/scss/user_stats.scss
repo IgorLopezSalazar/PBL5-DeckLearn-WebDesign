@@ -1,0 +1,102 @@
+@import '../../variables/variables';
+
+.stats-section {
+    > h2 {
+        display: flex;
+        text-align: center;
+        margin: 0;
+    
+        font-size: $title-font-size;
+        font-weight: normal;
+        border-bottom: 1px solid $border-bottom-color;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+}
+
+.stats-card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    h3 {
+        margin: 0;
+        font-weight: normal;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    &__content{  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0 0 2.5rem;
+        
+        p {
+            display: flex;
+            margin: 0;
+            font-size: 4rem;
+            padding-bottom: 1rem;
+            align-items: center;
+        }
+
+        img {
+            height:5rem;
+        }
+    }
+
+    &__decoration{
+        margin: 0;
+        background-color: $decklearn-green;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.stats-graphic {
+    div {
+        width: 400px;
+        height: 400px;
+        // background-image: conic-gradient(orange 64%, blue 17%);
+        background-image: conic-gradient(red .8rad, yellow .6rad, blue 1.3rad);
+        border-radius: 50%;
+    }
+}
+
+.donut-chart {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  
+    .slice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .chart-center {
+      position: absolute;
+      border-radius: 50%;
+    
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  
+  @include donut-chart('.chart2', 91, 200px, 20px, #e1e1e1, #fff, $decklearn-green);
