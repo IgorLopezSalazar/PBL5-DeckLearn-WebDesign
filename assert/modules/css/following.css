@@ -7,6 +7,7 @@
   src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
 
 .following__card {
+  width: 100%;
   margin: 0.5rem;
   padding: 0.5rem;
   display: flex;
@@ -40,10 +41,10 @@
         .following__card .card__container .card__data .data_follow span {
           font-weight: bold; }
     .following__card .card__container .card__button {
-      background-color: white;
+      width: 100%;
       border-radius: 1.3rem;
-      border-color: #46B6A0;
-      color: #8D8D8D;
+      border: solid #01CDA9 2px;
+      color: #000000;
       padding: 0.3rem;
       padding-left: 3rem;
       padding-right: 3rem;
@@ -65,6 +66,10 @@
 * {
   margin: 0;
   box-sizing: border-box; }
+
+.selected {
+  background-color: #01CDA9;
+  font-weight: bold; }
 
 .container__following {
   display: grid;

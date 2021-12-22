@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.selected{
+    background-color: $custom-button-border;
+    font-weight: bold;
+}
+
 .container__following{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
