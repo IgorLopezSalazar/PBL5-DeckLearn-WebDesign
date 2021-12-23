@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deack Learn - Language Settings</title>
+    <link rel="stylesheet" href="assert/main/css/main.css">
+    <link rel="stylesheet" href="assert/settings/css/settings.css">
+</head>
+
+<body>
+    <aside class="left-nav">
+        <header>
+            <img src="images/letterLogo.svg" alt="Logo">
+        </header>
+        <main class="nav-bar">
+            <ul class="nav-bar__list">
+                <a href="">
+                    <img src="images/icons/Home.svg" alt="">
+                    <li>Home</li>
+                </a>
+
+                <a href="">
+                    <img src="images/icons/CreateDeck_select.svg" alt="">
+                    <li>Create deck</li>
+                </a>
+
+                <a href="">
+                    <img src="images/icons/StudySessions.svg" alt="">
+                    <li>Study sessions</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Profile.svg" alt="">
+                    <li>Profile</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Stats.svg" alt="">
+                    <li>Stats</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Settings.svg" alt="">
+                    <li>Settings</li>
+                </a>
+            </ul>
+        </main>
+    </aside>
+
+    <main class="center-screen">
+        <nav class="top-nav">
+            <div class="top-nav__profile">
+                <img src="images/profilePic.jpg" alt="The profile picture of the user">
+                <span>Izan24</span>
+            </div>
+        </nav>
+
+        <section class="content-container">
+            <section class="content">
+                <section class="settings-content-section">
+                    <h1 class="settings__top-title">Settings</h1>
+                    <div>
+                        <div class="settings-selector">
+                            <div class="settings-selector__screens">
+                                <nav class="settings-selector__screens__list">
+                                    <a href="">
+                                        <p>Profile</p>
+                                    </a>               
+                                    <a href="">
+                                        <p>Security</p>
+                                    </a>
+                                    <a href="" class="selected">
+                                        <p>Language</p>
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="settings-selector__logout">
+                                <nav>
+                                    <a href="" id="logout">
+                                        <img src="images/icons/StudySessions.svg" alt="">
+                                        <p>Log out</p>
+                                    </a>               
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="settings-central">
+                            <div class="user-data-form">
+                                <form action="" class="altered-grided-form">
+                                    <label for="">English: </label>
+                                    <div class="custom_radio">
+                                        <input type="radio" name="lang" value="en" id="radio1" checked>
+                                        <label for="radio1"></label>
+                                    </div>                                    
+                                    <label for="">Spanish: </label>
+                                    <div class="custom_radio">
+                                        <input type="radio" name="lang" value="es" id="radio2">
+                                        <label for="radio2"></label>
+                                    </div>                                   
+                                    <label for="">Basque: </label>
+                                    <div class="custom_radio">
+                                        <input type="radio" name="lang" value="eus" id="radio3">
+                                        <label for="radio3"></label>
+                                    </div>                                  
+                                    <label for="">French: </label>
+                                    <div class="custom_radio">
+                                        <input type="radio" name="lang" value="fr" id="radio4">
+                                        <label for="radio4"></label>
+                                    </div>                                 
+                                    <input type="submit" class="altered-custom-submit" value="Save settings">
+                                </form>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
