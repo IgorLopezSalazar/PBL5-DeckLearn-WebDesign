@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deack Learn - Security Settings</title>
+    <link rel="stylesheet" href="assert/main/css/main.css">
+    <link rel="stylesheet" href="assert/settings/css/settings.css">
+</head>
+
+<body>
+    <aside class="left-nav">
+        <header>
+            <img src="images/letterLogo.svg" alt="Logo">
+        </header>
+        <main class="nav-bar">
+            <ul class="nav-bar__list">
+                <a href="">
+                    <img src="images/icons/Home.svg" alt="">
+                    <li>Home</li>
+                </a>
+
+                <a href="">
+                    <img src="images/icons/CreateDeck_select.svg" alt="">
+                    <li>Create deck</li>
+                </a>
+
+                <a href="">
+                    <img src="images/icons/StudySessions.svg" alt="">
+                    <li>Study sessions</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Profile.svg" alt="">
+                    <li>Profile</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Stats.svg" alt="">
+                    <li>Stats</li>
+                </a>
+                <a href="">
+                    <img src="images/icons/Settings.svg" alt="">
+                    <li>Settings</li>
+                </a>
+            </ul>
+        </main>
+    </aside>
+
+    <main class="center-screen">
+        <nav class="top-nav">
+            <div class="top-nav__profile">
+                <img src="images/profilePic.jpg" alt="The profile picture of the user">
+                <span>Izan24</span>
+            </div>
+        </nav>
+
+        <section class="content-container">
+            <section class="content">
+                <section class="settings-content-section">
+                    <h1 class="settings__top-title">Settings</h1>
+                    <div>
+                        <div class="settings-selector">
+                            <div class="settings-selector__screens">
+                                <nav class="settings-selector__screens__list">
+                                    <a href="">
+                                        <p>Profile</p>
+                                    </a>               
+                                    <a href=""  class="selected">
+                                        <p>Security</p>
+                                    </a>
+                                    <a href="">
+                                        <p>Language</p>
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="settings-selector__logout">
+                                <nav>
+                                    <a href="" id="logout">
+                                        <img src="images/icons/StudySessions.svg" alt="">
+                                        <p>Log out</p>
+                                    </a>               
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="settings-central">
+                            <div class="user-data-form">
+                                <form action="" class="grided-form">
+                                    <label for="">Email: </label>
+                                    <input type="text" class="custom-input" placeholder="Email">
+                                    <label for="">Password: </label>
+                                    <input type="password" class="custom-input" placeholder="Password">
+                                    <label for="">Confirm Password: </label>
+                                    <input type="password" class="custom-input" placeholder="Confirm">
+                                    <input type="submit" class="custom-submit" value="Save settings">
+                                </form>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
