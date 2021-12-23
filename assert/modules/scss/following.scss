@@ -1,0 +1,35 @@
+@import '../../variables/variables';
+@import '../../objects/user_following_card';
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.selected{
+    background-color: $custom-button-border;
+    font-weight: bold;
+}
+
+.container__following{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+}
+
+@media (min-width: screen-size(medium)){
+    .container__following{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: screen-size(large)){
+    .container__following{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}   
+
+@media (min-width: screen-size(extra-large)){
+    .container__following{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
