@@ -6,6 +6,7 @@
     $deg1: 90deg;
     $deg2: $deg;
     
+    
       // If percentage is less than 50%
     @if $perc < 50 {
         $base: $color;
@@ -20,17 +21,18 @@
             width: $size;
             height: $size;
             background: $base;
+            text-align: center;
             
             .slice {
                 &.one {
-                    clip: rect(0 $size $size/2 0);
+                    clip-path: polygon(0 0, $size 0, $size $size/2, 0% $size/2); //top right bottom left
                     -webkit-transform: rotate($deg1);
                     transform: rotate($deg1);
                     background: $color;
                 }
             
                 &.two {
-                    clip: rect(0 $size/2 $size 0);
+                    clip-path: polygon(0 0, $size/2 0, $size/2 $size, 0 $size);
                     -webkit-transform: rotate($deg2);
                     transform: rotate($deg2);
                     background: $color2;
@@ -50,7 +52,7 @@
                     color: $textColor;
 
                     &:after {
-                        content: '#{$perc}%';
+                        content: attr(data-after);
                     }
                 }
             }
