@@ -13,7 +13,7 @@
 
     &__list {
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
         padding-top: 1rem;
     }
@@ -28,8 +28,8 @@
 
     &__list{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         gap: 2rem;
     }
 
@@ -41,7 +41,7 @@
 
     &__content{  
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         padding: 0 0 0 2.5rem;
         
         p {
@@ -66,13 +66,28 @@
 }
 
 .stats-graphic {
-    div {
-        width: 400px;
-        height: 400px;
-        // background-image: conic-gradient(orange 64%, blue 17%);
-        background-image: conic-gradient(red .8rad, yellow .6rad, blue 1.3rad);
-        border-radius: 50%;
-    }
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  justify-content: center;
+  align-content: stretch;
+  gap: 2rem;
+
+  &__title{
+    text-align: center;
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+    background-color: #01CDA9;
+    border-radius: 1.3rem;
+    color: #FFFFFF;
+    padding: 0.3rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
 }
 
 .donut-chart {
@@ -99,4 +114,25 @@
     }
   }
   
-  @include donut-chart('.chart2', 91, 200px, 20px, #e1e1e1, #fff, $decklearn-green);
+  @include donut-chart('.chart1', 45, 15rem, 1.5rem, #e1e1e1, #fff, $decklearn-green);
+
+  @media (min-width: screen-size(medium)){
+    .stats-card {
+      &__list{
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+      }
+    }
+}
+
+@media (min-width: screen-size(large)){
+  .stats-section {
+    &__list {
+        grid-template-columns: 3fr 1fr;
+    }
+  }
+}   
+
+@media (min-width: screen-size(extra-large)){
+
+}

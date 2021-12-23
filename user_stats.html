@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assert/main/css/main.css">
     <link rel="stylesheet" href="assert/modules/css/home.css">
     <link rel="stylesheet" href="assert/user_stats/css/user_stats.css">
+    <script src="assert/user_stats/scss/user_stats.js"></script>
 </head>
 
 <body>
@@ -103,13 +104,15 @@
                         </div>
 
                         <div class="stats-graphic">
-                            <div class="donut-chart chart2">
-                                <div class="slice one"></div>
-                                <div class="slice two"></div>
+                            <h3 class="stats-graphic__title">Average pass ratio</h3>
+                            <div id="graph1" class="donut-chart chart1">
+                                <div id="graph_part1" class="slice one"></div>
+                                <div id="graph_part2" class="slice two"></div>
                                 <div class="chart-center">
-                                <span></span>
+                                    <span id="texto" data-after="45%"></span>
                                 </div>
                             </div>
+                            <a id="prueba">Return to profile</a>
                         </div>
 
                     </div>
