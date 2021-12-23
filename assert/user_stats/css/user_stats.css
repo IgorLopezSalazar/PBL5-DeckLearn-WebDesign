@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Sans Forgetica Regular';
+  src: local("Sans Forgetica Regular"), url("../../../font/SansForgetica-Regular.woff") format("woff"); }
+
+.stats-section > h2 {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+  border-bottom: 1px solid #959595; }
+
+.stats-section__list {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding-top: 1rem; }
+
+.stats-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .stats-card__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem; }
+  .stats-card h3 {
+    margin: 0;
+    font-weight: normal;
+    padding: 1rem 0 1rem 1rem; }
+  .stats-card__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 0 2.5rem; }
+    .stats-card__content p {
+      display: flex;
+      margin: 0;
+      font-size: 4rem;
+      padding-bottom: 1rem;
+      align-items: center; }
+    .stats-card__content img {
+      height: 5rem; }
+  .stats-card__decoration {
+    margin: 0;
+    background-color: #46B6A0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding-bottom: 2rem; }
+
+.stats-graphic div {
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(red 0.8rad, yellow 0.6rad, blue 1.3rad);
+  border-radius: 50%; }
+
+.donut-chart {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; }
+  .donut-chart .slice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .donut-chart .chart-center {
+    position: absolute;
+    border-radius: 50%; }
+    .donut-chart .chart-center span {
+      display: block;
+      text-align: center; }
+
+.donut-chart.chart2 {
+  width: 200px;
+  height: 200px;
+  background: #e1e1e1; }
+  .donut-chart.chart2 .slice.one {
+    clip: rect(0 200px 100px 0);
+    transform: rotate(90deg);
+    background: #46B6A0; }
+  .donut-chart.chart2 .slice.two {
+    clip: rect(0 100px 200px 0);
+    transform: rotate(327.6deg);
+    background: #46B6A0; }
+  .donut-chart.chart2 .chart-center {
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 160px;
+    background: #fff; }
+    .donut-chart.chart2 .chart-center span {
+      font-size: 40px;
+      line-height: 160px;
+      color: #46B6A0; }
+      .donut-chart.chart2 .chart-center span:after {
+        content: "91%"; }

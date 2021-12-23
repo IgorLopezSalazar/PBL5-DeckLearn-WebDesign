@@ -4,6 +4,14 @@ $media-sizes: (
     "extra-large": 1300px
 );
 
+$media-sizes-login: (
+    "medium": 450px
+);
+
 @function screen-size($pixels) {
     @return map-get($media-sizes, $pixels);
+}
+
+@function screen-size-login($pixels) {
+    @return map-get($media-sizes-login, $pixels);
 }
