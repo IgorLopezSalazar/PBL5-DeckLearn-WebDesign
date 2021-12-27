@@ -1,0 +1,88 @@
+@import '../variables/variables';
+@import '../variables/generic';
+@import '../variables/scrollbar';
+@import '../variables/base';
+
+.top-nav {
+    @include top-nav(flex-end);
+}
+
+.content {
+    h2 {
+        @include h2-title;
+    }
+}
+
+.card-view {
+    padding-top: 2rem;
+}
+
+.card-content {
+    display: grid;
+    justify-items: center;
+    align-content: stretch;
+
+    border-radius: 5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    gap: 10rem;
+
+    &__question {
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+
+        width: 80%;
+        border-bottom: 1px solid $border-bottom-color;
+
+        padding: 2rem 0 2rem 0;
+    }
+
+    a {
+        display: grid;
+        width: 100%;
+        height: 5rem;
+        font-size: 1.5rem;
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+
+        text-decoration: none;
+        text-decoration-line: none;
+        color:white;
+    }
+}
+
+@media (min-width: screen-size(medium)){
+    .card-content {
+        &__question {
+            padding: 4rem 2rem 2rem 2rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: screen-size(large)){
+    .card-content {
+        &__question {
+            padding: 6rem 2rem 2rem 2rem;
+        }
+    }
+
+    .card-view {
+        padding: 5rem 4rem 5rem 4rem;
+    }    
+}   
+
+@media (min-width: screen-size(extra-large)){
+
+    .card-content {
+        &__question {
+            padding: 8rem 2rem 2rem 2rem;
+        }
+    }
+
+    .card-view {
+        padding: 5rem 8rem 5rem 8rem;
+    }    
+}
