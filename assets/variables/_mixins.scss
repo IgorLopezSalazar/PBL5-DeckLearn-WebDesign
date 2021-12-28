@@ -90,7 +90,7 @@
 
 @mixin content($height)
 {
-    padding: 2rem 3rem 2rem 3rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
     margin-bottom: 3rem; //Esta linea es la culpable, seguro
     height: $height;
 }
@@ -101,10 +101,18 @@
     text-decoration: none;
     border: none;
     color: $custom-button-color;
-    padding: 0.2rem 4rem 0.2rem 4rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
     font-weight: 100;
     font-size: $button-font-size;
     cursor: pointer;
+
+    @media (min-width: screen-size(medium)){
+        padding: 0.2rem 2rem 0.2rem 2rem;
+    }
+
+    @media (min-width: screen-size(large)){
+        padding: 0.2rem 4rem 0.2rem 4rem;
+    }
 }
 
 @mixin thick-button{
@@ -159,4 +167,12 @@
     font-size: $title-font-size;
     font-weight: 500;
     border-bottom: 1px solid $border-bottom-color;
+}
+
+@mixin profile-img{
+    padding: 1rem;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
 }

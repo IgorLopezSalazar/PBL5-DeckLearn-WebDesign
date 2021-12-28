@@ -13,13 +13,18 @@
     @include top-nav(flex-end);
 }
 
+.settings-content-section{
+    > div {
+        padding-top: 4rem;
+    }
+}
+
 .settings-selector{
     border: $input-underline 1px solid;
     border-radius: $settings-selector-radius;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
     flex-direction: row;
 
     &__logout
@@ -42,7 +47,7 @@ a{
 }
 
 .selected{
-    border-left: $decklearn-green solid 3px;
+    border-left: $decklearn-green solid 2px;
 }
 
 #logout{
@@ -53,6 +58,7 @@ a{
 
     > p{
         font-weight: 500;
+        font-size: 1.1rem;
     }
 }
 
@@ -84,6 +90,13 @@ a{
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
+
+        > p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            width: 100%;
+            text-align: left;
+        }
     }
 
     &__button{
@@ -117,6 +130,13 @@ a{
     grid-template-columns: auto 1fr;
     justify-items: right;
     align-items: end;
+
+    > label {
+        text-align: left;
+        justify-self: left;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
 }
 
 .altered-grided-form{
@@ -126,6 +146,7 @@ a{
 
 .settings-central{
     padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 label{
@@ -137,6 +158,7 @@ label{
         display: grid;
         grid-template-columns: 5fr 3fr;
         gap: 1.5rem;
+        padding: 1rem 0 0 3rem;
     }
 
     .profile-photo {
@@ -168,9 +190,9 @@ label{
     .settings-selector{
         flex-direction: column;
         justify-content: space-between;
-        margin-right: 1rem;
         align-items: start;
         height: 70%;
+        padding: 1rem 0 0.75rem 0;
     }
 
     .profile-photo {
@@ -180,10 +202,6 @@ label{
             justify-content: start;
             padding-top: 1rem;
         }
-    }
-
-    h1{
-        margin-bottom: 3rem;
     }
     
     .grided-form{

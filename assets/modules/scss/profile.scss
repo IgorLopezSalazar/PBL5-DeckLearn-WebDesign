@@ -15,9 +15,10 @@
 
 .profile-data{
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3.5rem;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     flex-direction: column;
     text-align: center;
 
@@ -29,15 +30,7 @@
     }
 
     &__image {
-        padding: 1rem;
-        object-fit: cover;
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-    }
-
-    &__button {
-        padding-bottom: 2rem;
+        @include profile-img;
     }
 }
 

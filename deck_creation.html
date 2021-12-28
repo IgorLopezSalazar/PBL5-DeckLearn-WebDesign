@@ -8,6 +8,7 @@
     <title>Deack Learn - Deck Creation</title>
     <link rel="stylesheet" href="assets/modules/css/home.css">
     <link rel="stylesheet" href="assets/deck_creation/css/deck_creation.css">
+    <script src="js/textarea.js"></script>
 </head>
 
 <body>
@@ -49,8 +50,6 @@
 
     <main class="center-screen">
         <nav class="top-nav">
-            <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search for names.."
-                title="Type in a name" class="search-bar">
             <div class="top-nav__profile">
                 <img src="images/profilePic.jpg" alt="">
                 <span>Izan24</span>
@@ -60,7 +59,7 @@
         <section class="content-container">
             <section class="content">
                 <section class="deck-creation-section">
-                    <h2>Search Results</h2>
+                    <h2>Create a deck</h2>
 
                     <div class="deck-creation-section__list">
                         <div class="deck-creation">
@@ -74,8 +73,8 @@
                             <div>
                                 <h4>Description:</h4>
 
-                                <textarea name="Description" rows="4" cols="100" placeholder="Description"
-                                class="card-creation__data"></textarea>
+                                <textarea name="Description" cols="50" rows="1" placeholder="Description"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
                             </div>
                             <button class="creation-button"><img src="images/letterLogo.svg" alt="">Upload
                                 image</button>
@@ -85,19 +84,21 @@
                             <h4>Cards:</h4>
 
                             <label>Card number: 0</label>
+                            <div id="question-answer">
+                                <textarea name="Question" cols="50" rows="1" placeholder="Question"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
 
-                            <textarea name="Question" rows="4" cols="100" placeholder="Question"
-                                class="card-creation__data"></textarea>
+                                <textarea name="Answer" cols="50" rows="1" placeholder="Answer"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
+                            </div>
 
-                            <textarea name="Answer" rows="4" cols="100" placeholder="Answer"
-                            class="card-creation__data"></textarea>
 
-                            <button class="creation-button"><img src="images/letterLogo.svg" alt="">Upload
-                                image</button>
-                        </div>
+                            <div id="buttons">
+                                <button class="creation-button"><img src="images/letterLogo.svg" alt="">Upload
+                                    image</button>
+                                <button class="custom-button">Add Card</button>
+                            </div>
 
-                        <div class="add-card">
-                            <button class="custom-button">Add Card</button>
                         </div>
                     </div>
                 </section>

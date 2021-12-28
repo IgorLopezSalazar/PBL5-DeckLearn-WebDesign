@@ -14,8 +14,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #01CDA9;
-  border-radius: 5px;
-  border-right: 2px solid #d6d6d6; }
+  border-radius: 5px; }
 
 body {
   height: 100vh;
@@ -109,7 +108,7 @@ body {
   overflow-x: none; }
 
 .content {
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   margin-bottom: 3rem;
   height: auto; }
 

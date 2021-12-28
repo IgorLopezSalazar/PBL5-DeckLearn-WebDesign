@@ -14,8 +14,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #01CDA9;
-  border-radius: 5px;
-  border-right: 2px solid #d6d6d6; }
+  border-radius: 5px; }
 
 body {
   height: 100vh;
@@ -109,7 +108,7 @@ body {
   overflow-x: none; }
 
 .content {
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   margin-bottom: 3rem;
   height: auto; }
 
@@ -246,9 +245,10 @@ body {
 
 .profile-data {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3.5rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   flex-direction: column;
   text-align: center; }
   .profile-data__img-user {
@@ -262,8 +262,6 @@ body {
     width: 10rem;
     height: 10rem;
     border-radius: 50%; }
-  .profile-data__button {
-    padding-bottom: 2rem; }
 
 .button-editProfile {
   border-radius: 1.3rem;
@@ -271,10 +269,16 @@ body {
   text-decoration: none;
   border: none;
   color: #FFFFFF;
-  padding: 0.2rem 4rem 0.2rem 4rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   font-weight: 100;
   font-size: 1.3rem;
   cursor: pointer; }
+  @media (min-width: 762px) {
+    .button-editProfile {
+      padding: 0.2rem 2rem 0.2rem 2rem; } }
+  @media (min-width: 1024px) {
+    .button-editProfile {
+      padding: 0.2rem 4rem 0.2rem 4rem; } }
 
 .user-name h2 {
   font-weight: 400;

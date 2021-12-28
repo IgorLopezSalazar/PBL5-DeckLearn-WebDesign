@@ -14,8 +14,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #01CDA9;
-  border-radius: 5px;
-  border-right: 2px solid #d6d6d6; }
+  border-radius: 5px; }
 
 input[type="checkbox"] {
   display: none; }

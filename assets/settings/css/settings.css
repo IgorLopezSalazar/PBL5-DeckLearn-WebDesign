@@ -14,8 +14,7 @@
 
 ::-webkit-scrollbar-thumb {
   background: #01CDA9;
-  border-radius: 5px;
-  border-right: 2px solid #d6d6d6; }
+  border-radius: 5px; }
 
 body {
   height: 100vh;
@@ -109,7 +108,7 @@ body {
   overflow-x: none; }
 
 .content {
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   margin-bottom: 3rem;
   height: auto; }
 
@@ -165,10 +164,10 @@ input[type="radio"] {
       background-color: #01CDA9;
       content: "";
       border-radius: 10px;
-      top: 4px;
-      left: 4px;
-      width: 11px;
-      height: 11px; }
+      top: 3px;
+      left: 3px;
+      width: 9px;
+      height: 9px; }
 
 input[type="checkbox"] {
   display: none; }
@@ -190,7 +189,7 @@ input[type="checkbox"] {
       font-size: 1.2rem; }
 
 .content {
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   margin-bottom: 3rem;
   height: 100%; }
 
@@ -214,13 +213,15 @@ input[type="checkbox"] {
       font-weight: 500;
       font-size: 1.2rem; }
 
+.settings-content-section > div {
+  padding-top: 4rem; }
+
 .settings-selector {
   border: #BAB8B8 1px solid;
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
   flex-direction: row; }
   .settings-selector__logout > nav {
     justify-content: center;
@@ -236,7 +237,7 @@ a {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
 
 .selected {
-  border-left: #46B6A0 solid 3px; }
+  border-left: #46B6A0 solid 2px; }
 
 #logout {
   color: #FA4141;
@@ -244,7 +245,8 @@ a {
   display: flex;
   gap: 0.5rem; }
   #logout > p {
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 1.1rem; }
 
 .settings__top-title {
   border-bottom: #BAB8B8 1px solid;
@@ -270,16 +272,27 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 1rem; }
+    .profile-photo > div > p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      width: 100%;
+      text-align: left; }
   .profile-photo__button {
     border-radius: 1.3rem;
     background-color: #01CDA9;
     text-decoration: none;
     border: none;
     color: #FFFFFF;
-    padding: 0.2rem 4rem 0.2rem 4rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
     font-weight: 100;
     font-size: 1.3rem;
     cursor: pointer; }
+    @media (min-width: 762px) {
+      .profile-photo__button {
+        padding: 0.2rem 2rem 0.2rem 2rem; } }
+    @media (min-width: 1024px) {
+      .profile-photo__button {
+        padding: 0.2rem 4rem 0.2rem 4rem; } }
 
 .custom-input {
   border: 0;
@@ -294,7 +307,7 @@ a {
   text-decoration: none;
   border: none;
   color: #FFFFFF;
-  padding: 0.2rem 4rem 0.2rem 4rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   font-weight: 100;
   font-size: 1.3rem;
   cursor: pointer;
@@ -302,6 +315,12 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   grid-column: 2; }
+  @media (min-width: 762px) {
+    .custom-submit, .altered-custom-submit {
+      padding: 0.2rem 2rem 0.2rem 2rem; } }
+  @media (min-width: 1024px) {
+    .custom-submit, .altered-custom-submit {
+      padding: 0.2rem 4rem 0.2rem 4rem; } }
 
 .altered-custom-submit {
   grid-column-start: span 2; }
@@ -312,12 +331,18 @@ a {
   grid-template-columns: auto 1fr;
   justify-items: right;
   align-items: end; }
+  .grided-form > label, .altered-grided-form > label {
+    text-align: left;
+    justify-self: left;
+    font-weight: 500;
+    font-size: 1.2rem; }
 
 .altered-grided-form {
   justify-items: left; }
 
 .settings-central {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-left: 1rem; }
 
 label {
   text-align: end; }
@@ -326,7 +351,8 @@ label {
   .settings-central {
     display: grid;
     grid-template-columns: 5fr 3fr;
-    gap: 1.5rem; }
+    gap: 1.5rem;
+    padding: 1rem 0 0 3rem; }
   .profile-photo {
     grid-column: 2;
     grid-row: 1; }
@@ -346,15 +372,13 @@ label {
   .settings-selector {
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 1rem;
     align-items: start;
-    height: 70%; }
+    height: 70%;
+    padding: 1rem 0 0.75rem 0; }
   .profile-photo {
     align-items: start; }
     .profile-photo > div {
       justify-content: start;
       padding-top: 1rem; }
-  h1 {
-    margin-bottom: 3rem; }
   .grided-form, .altered-grided-form {
     gap: 3rem; } }
