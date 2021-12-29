@@ -1,0 +1,15 @@
+@import '../../variables/variables';
+
+.card-section {
+    > h2 {
+        font-size: $title-font-size;
+        font-weight: 500;
+        border-bottom: 1px solid $border-bottom-color;
+    }
+}
+
+@media (min-width: screen-size(medium)){
+    .card-section {
+        padding: 3rem, 2rem, 2rem, 3rem;
+    }
+}

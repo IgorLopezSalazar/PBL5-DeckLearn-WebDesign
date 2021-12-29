@@ -1,0 +1,111 @@
+@import '../../variables/variables';
+@import '../../variables/generic';
+@import '../../variables/scrollbar';
+@import '../../variables/base';
+@import '../../objects/card';
+
+.top-nav {
+    @include top-nav(flex-end);
+}
+
+.profile__top-title{
+    border-bottom: $input-underline 1px solid;
+    padding: 0.1rem;
+}
+
+.profile-data{
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+
+    &__img-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__image {
+        @include profile-img;
+    }
+}
+
+.button-editProfile {
+    @include default-button;
+}
+
+.user-name {
+    h2{
+        font-weight: 400;
+        font-size: 1.75rem;
+        text-align: left;
+    }
+    h3{
+        font-weight: 100;
+        font-size: 1rem;
+        color: $h3-color;
+        padding: 0.3rem 0 0.3rem 0;
+    }
+}
+
+.user-follower{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    p{
+        span{
+            font-weight: bold;
+        }
+    }
+}
+
+.profile-nav{
+    border-bottom: $input-underline 1px solid;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.selected{
+    border-bottom: $decklearn-green solid 2px;
+}
+
+@media (min-width: screen-size(medium)){
+    .profile-data{
+        flex-direction: row;
+        align-items: flex-end;
+
+        &__img-user {
+            flex-direction: row;
+        }
+
+        &__button {
+            display: flex;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .user-name {
+        h3{
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: screen-size(large)){
+    
+}   
+
+@media (min-width: screen-size(extra-large)){
+    
+}

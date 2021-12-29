@@ -1,0 +1,8 @@
+@import '../../objects/card_answer_question';
+
+.card-content {
+    a {
+        border-radius: 0 0 5rem 5rem;
+        background-color: $card-section-button-color;
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../objects/card_answer_question';
+
+.card-content__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    &-pass {
+        background-color: $card-section-button-color-fail;
+        border-radius: 0 0 0 5rem;
+    }
+
+    
+    &-fail {
+        background-color: $card-section-button-color;
+        border-radius: 0 0 5rem 0;
+    }
+}
