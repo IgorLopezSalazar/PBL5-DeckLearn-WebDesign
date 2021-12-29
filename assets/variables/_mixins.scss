@@ -91,7 +91,7 @@
 @mixin content($height)
 {
     padding: 2rem 1.5rem 2rem 1.5rem;
-    margin-bottom: 3rem; //Esta linea es la culpable, seguro
+    //margin-bottom: 3rem; //Esta linea es la culpable, seguro
     height: $height;
 }
 

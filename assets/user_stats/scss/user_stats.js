@@ -1,9 +1,28 @@
 window.onload = function() {
     console.log("Window loaded");
-
+    var fileName = location.href.split("/").slice(-1); 
+    if(fileName == "session_review.html")
+    {
+        colorText();
+    }
     var btn = document.getElementById('prueba');
     btn.addEventListener("click", reset);
 
+}
+
+function colorText(){
+    var perc_p = document.getElementById('grade-change');
+    var percent = perc_p.textContent.split("%");
+    var img = document.getElementById('grade-change-img');
+    if(percent[0] >= 0)
+    {
+        perc_p.classList.add("improve");
+        img.src = "images/book.svg";
+    }
+    else{
+        perc_p.classList.add("worsened");
+        img.src = "images/icons/Profile.svg";
+    }
 }
 
 function reset(){
