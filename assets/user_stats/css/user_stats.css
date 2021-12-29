@@ -227,6 +227,7 @@ body {
     color: #FFFFFF;
     background-color: #01CDA9;
     text-decoration: none;
+    cursor: pointer;
     white-space: nowrap; }
 
 .donut-chart {

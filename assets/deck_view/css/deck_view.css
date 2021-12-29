@@ -206,6 +206,7 @@ body {
     color: #FFFFFF;
     background-color: #01CDA9;
     text-decoration: none;
+    cursor: pointer;
     white-space: nowrap; }
   .deck-view__buttons :last-child {
     background-color: rgba(205, 1, 1, 0.69); }
@@ -241,6 +242,7 @@ body {
       color: #FFFFFF;
       background-color: #01CDA9;
       text-decoration: none;
+      cursor: pointer;
       white-space: nowrap;
       font-weight: 700; }
   .info__studiesNum {

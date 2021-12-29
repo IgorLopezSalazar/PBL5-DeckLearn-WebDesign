@@ -41,6 +41,7 @@
         border-bottom: 1px solid $border-bottom-color;
         margin-left: 1.5rem;
         padding-bottom: 0.3rem;
+        padding-top: 0.5rem;
 
         width: calc(100% - 1.5rem);
         resize: none;
@@ -97,6 +98,7 @@
     
     background-color: $creation-button-bg-color;
     color: $creation-button-color;
+    cursor: pointer;
 
     > img {
         width: 1.7rem;
@@ -118,10 +120,8 @@
     border: 0;
     height: fit-content;
     font-size: $data-font-size;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
 
     color: $custom-button-font-color;
     background-color: $card-section-button-color;
@@ -131,13 +131,13 @@
 
 .deck-categories {
     padding-top: 3rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         gap: 1rem;
 
         > button {
@@ -154,6 +154,7 @@
                 width: 1rem;
                 margin-right: 0.2rem;
                 margin-left: 0.2rem;
+                cursor: pointer;
             }
         }
     }

@@ -197,6 +197,7 @@ body {
     border-bottom: 1px solid #BAB8B8;
     margin-left: 1.5rem;
     padding-bottom: 0.3rem;
+    padding-top: 0.5rem;
     width: calc(100% - 1.5rem);
     resize: none;
     font-size: 1.2rem;
@@ -235,7 +236,8 @@ body {
   border: 0;
   border-radius: 1.3rem;
   background-color: white;
-  color: black; }
+  color: black;
+  cursor: pointer; }
   .creation-button > img {
     width: 1.7rem;
     margin-right: 0.5rem; }
@@ -253,22 +255,20 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   font-size: 1.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  cursor: pointer;
   color: #FFFFFF;
   background-color: #01CDA9;
   white-space: nowrap; }
 
 .deck-categories {
   padding-top: 3rem;
-  padding-left: 1rem; }
+  padding-left: 1.5rem; }
   .deck-categories__list {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     gap: 1rem; }
     .deck-categories__list > button {
       display: flex;
@@ -280,7 +280,8 @@ body {
       .deck-categories__list > button > img {
         width: 1rem;
         margin-right: 0.2rem;
-        margin-left: 0.2rem; }
+        margin-left: 0.2rem;
+        cursor: pointer; }
 
 .create-deck {
   display: flex;
@@ -297,6 +298,7 @@ body {
     color: #FFFFFF;
     background-color: #01CDA9;
     text-decoration: none;
+    cursor: pointer;
     white-space: nowrap; }
 
 .categories-bar {
