@@ -16,3 +16,9 @@
         border-radius: 0 0 5rem 0;
     }
 }
+
+@media (min-width: screen-size(large)){
+    .card-content {
+        gap: 4rem;
+    }
+}  

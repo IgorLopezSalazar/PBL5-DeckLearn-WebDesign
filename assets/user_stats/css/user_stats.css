@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
+  grid-template-rows: 1fr auto;
   grid-template-areas: "center-content" "bottom-nav"; }
 
 .left-nav {
@@ -109,7 +110,6 @@ body {
 
 .content {
   padding: 2rem 1.5rem 2rem 1.5rem;
-  margin-bottom: 3rem;
   height: auto; }
 
 @media (min-width: 550px) {
@@ -177,7 +177,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  padding-left: 2rem; }
 
 .stats-card {
   border-radius: 0.5rem;
