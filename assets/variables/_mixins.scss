@@ -176,3 +176,57 @@
     height: 10rem;
     border-radius: 50%;
 }
+
+@mixin profile-nav{
+    border-bottom: $input-underline 1px solid;
+    display: flex;
+    gap: 0.5rem;
+
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@mixin profile-data{
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+
+    &__img-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__image {
+        @include profile-img;
+    }
+    
+}
+
+@mixin profile-data-media{
+    .profile-data{
+        flex-direction: row;
+        align-items: flex-end;
+
+        &__img-user {
+            flex-direction: row;
+        }
+
+        &__button {
+            display: flex;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .user-name {
+        h3{
+            text-align: left;
+        }
+    }
+}

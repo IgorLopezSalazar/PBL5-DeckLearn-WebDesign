@@ -1,0 +1,36 @@
+@import '../../variables/variables';
+@import '../../variables/generic';
+@import '../../variables/scrollbar';
+
+.profile-nav__center{
+    @include profile-nav;
+    justify-content: center;
+}
+
+.profile-data{
+    @include profile-data;
+}
+
+.button-follow{
+    @include default-button;
+}
+
+.button-following{
+    @include default-button;
+    background-color: $custom-button-color;
+    color: $custom-button-text-color;
+    border: solid 2px $custom-button-border;
+}
+
+.button-unfollow{
+    @include default-button;
+    background-color: $custom-button-unfollow;
+    color: $custom-button-unfollow-text;
+    border: solid 2px $custom-button-unfollow-text;
+}
+
+
+
+@media (min-width: screen-size(medium)){
+    @include profile-data-media;
+}
