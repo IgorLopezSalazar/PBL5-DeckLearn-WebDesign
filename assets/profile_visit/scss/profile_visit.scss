@@ -13,17 +13,16 @@
 
 .button-follow{
     @include default-button;
+    width: 15rem;
 }
 
 .button-following{
-    @include default-button;
     background-color: $custom-button-color;
     color: $custom-button-text-color;
     border: solid 2px $custom-button-border;
 }
 
 .button-unfollow{
-    @include default-button;
     background-color: $custom-button-unfollow;
     color: $custom-button-unfollow-text;
     border: solid 2px $custom-button-unfollow-text;
