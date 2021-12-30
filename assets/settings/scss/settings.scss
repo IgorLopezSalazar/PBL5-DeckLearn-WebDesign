@@ -36,6 +36,15 @@
             flex-direction: column;
         }
     }
+
+    &__screens__list{
+        a{
+            &:hover{
+                background-color: $darkened-for-white-buttons-color;
+                border-radius: $settings-button-radius;
+            }
+        }
+    }
 }
 
 a{
@@ -44,11 +53,6 @@ a{
     display: flex;
     align-items: center;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-
-    &:hover{
-        background-color: $darkened-for-white-buttons-color;
-        border-radius: $settings-button-radius;
-    }
 }
 
 .selected{
