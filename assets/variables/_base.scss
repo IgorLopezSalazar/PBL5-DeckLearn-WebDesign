@@ -43,6 +43,11 @@ body {
             text-decoration: none;
             color: $nav-bar-items-color;
 
+            &:hover{
+                background-color: $darkened-decklearn-color;
+                border-radius: $button-radius;
+            }
+
             > img {
                 display: inline-block;
                 width: 2rem;

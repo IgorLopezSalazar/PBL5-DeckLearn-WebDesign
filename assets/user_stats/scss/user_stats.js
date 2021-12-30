@@ -17,11 +17,11 @@ function colorText(){
     if(percent[0] >= 0)
     {
         perc_p.classList.add("improve");
-        img.src = "images/book.svg";
+        img.src = "images/icons/GradeUP.svg";
     }
     else{
         perc_p.classList.add("worsened");
-        img.src = "images/icons/Profile.svg";
+        img.src = "images/icons/GradeDOWN.svg";
     }
 }
 

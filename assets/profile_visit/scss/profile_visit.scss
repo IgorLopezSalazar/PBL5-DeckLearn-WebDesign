@@ -17,15 +17,15 @@
 }
 
 .button-following{
-    background-color: $custom-button-color;
-    color: $custom-button-text-color;
-    border: solid 2px $custom-button-border;
+    background-color: $custom-button-color !important;
+    color: $custom-button-text-color !important;
+    border: solid 2px $custom-button-border !important;
 }
 
 .button-unfollow{
-    background-color: $custom-button-unfollow;
-    color: $custom-button-unfollow-text;
-    border: solid 2px $custom-button-unfollow-text;
+    background-color: $custom-button-unfollow !important;
+    color: $custom-button-unfollow-text !important;
+    border: solid 2px $custom-button-unfollow-text !important;
 }
 
 

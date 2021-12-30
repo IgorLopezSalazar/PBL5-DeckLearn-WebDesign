@@ -4,5 +4,9 @@
     a {
         border-radius: 0 0 5rem 5rem;
         background-color: $card-section-button-color;
+
+        &:hover{
+            background-color: $darkened-decklearn-color;
+        }
     }
 }

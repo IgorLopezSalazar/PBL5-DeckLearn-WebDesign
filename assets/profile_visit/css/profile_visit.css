@@ -61,16 +61,18 @@
   @media (min-width: 1024px) {
     .button-follow {
       padding: 0.2rem 4rem 0.2rem 4rem; } }
+  .button-follow:hover {
+    background-color: #007e68; }
 
 .button-following {
-  background-color: #FFFFFF;
-  color: #000000;
-  border: solid 2px #01CDA9; }
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  border: solid 2px #01CDA9 !important; }
 
 .button-unfollow {
-  background-color: rgba(211, 70, 10, 0.1);
-  color: #d34646;
-  border: solid 2px #d34646; }
+  background-color: rgba(211, 70, 10, 0.1) !important;
+  color: #d34646 !important;
+  border: solid 2px #d34646 !important; }
 
 @media (min-width: 762px) {
   .profile-data {

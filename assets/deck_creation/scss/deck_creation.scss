@@ -100,6 +100,10 @@
     color: $creation-button-color;
     cursor: pointer;
 
+    &:hover{
+        background-color: $darkened-for-white-buttons-color;
+    }
+
     > img {
         width: 1.7rem;
         margin-right: 0.5rem;
@@ -127,6 +131,10 @@
     background-color: $card-section-button-color;
 
     white-space: nowrap;
+
+    &:hover{
+        background-color: $darkened-decklearn-color;
+    }
 }
 
 .deck-categories {
@@ -151,10 +159,14 @@
             font-size: $categories-font-size;
 
             > img {
-                width: 1rem;
+                width: 0.7rem;
                 margin-right: 0.2rem;
                 margin-left: 0.2rem;
                 cursor: pointer;
+            }
+
+            &:hover{
+                background-color: $darkened-tags-color;
             }
         }
     }
