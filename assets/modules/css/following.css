@@ -29,11 +29,13 @@ body {
   padding: 1rem;
   grid-area: bottom-nav;
   flex-direction: row; }
-  .left-nav > header > img {
-    height: 100%;
-    width: 40%;
-    min-width: 4rem;
-    display: none; }
+  .left-nav > header > a {
+    cursor: pointer; }
+    .left-nav > header > a > img {
+      height: 100%;
+      width: 40%;
+      min-width: 4rem;
+      display: none; }
 
 .nav-bar__list {
   list-style-type: none;
@@ -51,7 +53,8 @@ body {
     color: #FFFFFF; }
     .nav-bar__list > a:hover {
       background-color: #007e68;
-      border-radius: 1.3rem; }
+      border-radius: 1.3rem;
+      transition-delay: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -90,7 +93,8 @@ body {
     .top-nav__profile a {
       font-weight: 500;
       font-size: 1.2rem;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
 
 .search-bar {
   min-height: 3rem;
@@ -123,7 +127,7 @@ body {
   .left-nav {
     padding: 1rem;
     grid-area: unset; }
-    .left-nav > header > img {
+    .left-nav > header > a > img {
       display: inline; }
   .center-screen {
     grid-area: unset; }
@@ -169,7 +173,8 @@ body {
     .top-nav__profile a {
       font-weight: 500;
       font-size: 1.2rem;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
 
 .following__card {
   width: 100%;
@@ -256,7 +261,8 @@ body {
     .custom-button {
       padding: 0.2rem 4rem 0.2rem 4rem; } }
   .custom-button:hover {
-    background-color: #007e68; }
+    background-color: #007e68;
+    transition-delay: 0.2s; }
 
 .container__following {
   display: grid;

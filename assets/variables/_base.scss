@@ -16,12 +16,14 @@ body {
     flex-direction: row;
 
     > header {
-
-        > img {
-            height: 100%;
-            width: 40%;
-            min-width: 4rem;
-            display: none;
+        > a{
+            cursor: pointer;
+            > img {
+                height: 100%;
+                width: 40%;
+                min-width: 4rem;
+                display: none;
+            }
         }
     }
 }
@@ -46,6 +48,7 @@ body {
             &:hover{
                 background-color: $darkened-decklearn-color;
                 border-radius: $button-radius;
+                transition-delay: 0.2s;
             }
 
             > img {
@@ -118,7 +121,7 @@ body {
         padding: 1rem;
         grid-area: unset;
 
-        > header > img {
+        > header > a > img {
             display: inline;
         }
     }
