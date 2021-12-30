@@ -49,6 +49,9 @@ body {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     text-decoration: none;
     color: #FFFFFF; }
+    .nav-bar__list > a:hover {
+      background-color: #007e68;
+      border-radius: 1.3rem; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -84,9 +87,10 @@ body {
     .top-nav__profile > img {
       height: 3rem;
       border-radius: 50%; }
-    .top-nav__profile span {
+    .top-nav__profile a {
       font-weight: 500;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-decoration: none; }
 
 .search-bar {
   min-height: 3rem;
@@ -162,9 +166,10 @@ body {
     .top-nav__profile > img {
       height: 3rem;
       border-radius: 50%; }
-    .top-nav__profile span {
+    .top-nav__profile a {
       font-weight: 500;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-decoration: none; }
 
 .content {
   height: 100%; }
@@ -245,3 +250,5 @@ body {
 .card-content a, .card-content__img a, .card-content__img__noQ a {
   border-radius: 0 0 5rem 5rem;
   background-color: #01CDA9; }
+  .card-content a:hover, .card-content__img a:hover, .card-content__img__noQ a:hover {
+    background-color: #007e68; }

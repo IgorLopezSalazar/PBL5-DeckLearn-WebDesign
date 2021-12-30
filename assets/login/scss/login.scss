@@ -101,12 +101,20 @@ main {
     padding: 0.05rem 3.5rem 0.5rem 3.5rem;
     color: $custom-button-sec-color;
     cursor: pointer;
+
+    &:hover{
+        background-color: $darkened-for-white-buttons-color;
+    }
 }
 
 .forgot-password {
     text-align: center;
     text-decoration: none;
     color: $button-green;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 @media (min-width: screen-size-login(medium)){

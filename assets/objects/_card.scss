@@ -35,6 +35,10 @@
         text-decoration: none;
         text-decoration-line: none;
         color: $card-font-color;
+
+        &:hover{
+            background-color: $darkened-decklearn-color;
+        }
     }
 }
 

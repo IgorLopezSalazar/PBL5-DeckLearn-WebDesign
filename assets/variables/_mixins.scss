@@ -81,9 +81,10 @@
             border-radius: 50%;
         }
 
-        span {
+        a {
             font-weight: 500;
             font-size: 1.2rem;
+            text-decoration: none;
         }
     }
 }
@@ -113,6 +114,10 @@
     @media (min-width: screen-size(large)){
         padding: 0.2rem 4rem 0.2rem 4rem;
     }
+
+    &:hover{
+        background-color: $darkened-decklearn-color;
+    }
 }
 
 @mixin thick-button{
@@ -132,6 +137,10 @@
     text-decoration: none;
     cursor: pointer;
     white-space: nowrap;
+
+    &:hover{
+        background-color: $darkened-decklearn-color;
+    }
 }
 
 @mixin colored-part{
@@ -150,6 +159,10 @@
     font-size: $button-font-size;
     font-weight: 100;
     cursor: pointer;
+
+    &:hover{
+        background-color: $darkened-decklearn-color;
+    }
 }
 
 @mixin custom-input{

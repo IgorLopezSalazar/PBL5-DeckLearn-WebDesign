@@ -49,6 +49,9 @@ body {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     text-decoration: none;
     color: #FFFFFF; }
+    .nav-bar__list > a:hover {
+      background-color: #007e68;
+      border-radius: 1.3rem; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -84,9 +87,10 @@ body {
     .top-nav__profile > img {
       height: 3rem;
       border-radius: 50%; }
-    .top-nav__profile span {
+    .top-nav__profile a {
       font-weight: 500;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-decoration: none; }
 
 .search-bar {
   min-height: 3rem;
@@ -162,9 +166,10 @@ body {
     .top-nav__profile > img {
       height: 3rem;
       border-radius: 50%; }
-    .top-nav__profile span {
+    .top-nav__profile a {
       font-weight: 500;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-decoration: none; }
 
 .deck-creation-section > h2 {
   display: flex;
@@ -238,6 +243,8 @@ body {
   background-color: white;
   color: black;
   cursor: pointer; }
+  .creation-button:hover {
+    background-color: #DBDFDF; }
   .creation-button > img {
     width: 1.7rem;
     margin-right: 0.5rem; }
@@ -260,6 +267,8 @@ body {
   color: #FFFFFF;
   background-color: #01CDA9;
   white-space: nowrap; }
+  .custom-button:hover {
+    background-color: #007e68; }
 
 .deck-categories {
   padding-top: 3rem;
@@ -278,10 +287,12 @@ body {
       padding: 0.2rem;
       font-size: 1rem; }
       .deck-categories__list > button > img {
-        width: 1rem;
+        width: 0.7rem;
         margin-right: 0.2rem;
         margin-left: 0.2rem;
         cursor: pointer; }
+      .deck-categories__list > button:hover {
+        background-color: gainsboro; }
 
 .create-deck {
   display: flex;
@@ -300,6 +311,8 @@ body {
     text-decoration: none;
     cursor: pointer;
     white-space: nowrap; }
+    .create-deck__button:hover {
+      background-color: #007e68; }
 
 .categories-bar {
   width: 100%; }

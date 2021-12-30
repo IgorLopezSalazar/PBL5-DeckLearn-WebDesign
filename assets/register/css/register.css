@@ -119,6 +119,8 @@ main {
   cursor: pointer;
   width: -moz-fit-content;
   width: fit-content; }
+  .custom-submit:hover {
+    background-color: #007e68; }
 
 .forgot-password {
   text-align: center;

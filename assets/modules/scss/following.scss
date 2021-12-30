@@ -22,6 +22,8 @@
     }
 
     &__content{
+        text-decoration: none;
+        color: $following-follower-color;
         display: flex;
         //height: 100%;
         flex-direction: column;

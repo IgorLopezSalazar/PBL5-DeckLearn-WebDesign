@@ -49,6 +49,10 @@
 
         :last-child {
             background-color: $card-section-button-color-fail;
+
+            &:hover{
+                background-color: $darkened-red-color;
+            }
         }
     }
 }

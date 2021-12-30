@@ -21,4 +21,10 @@
 
 .special{
     grid-template-columns: auto 1fr;
+
+    > img {
+        height: 60%;
+        padding-top: 1.5rem;
+        padding-left: 0.5rem;
+    }
 }
