@@ -36,6 +36,16 @@
             flex-direction: column;
         }
     }
+
+    &__screens__list{
+        a{
+            &:hover{
+                background-color: $darkened-for-white-buttons-color;
+                border-radius: $settings-button-radius;
+                transition-delay: 0.2s;
+            }
+        }
+    }
 }
 
 a{
