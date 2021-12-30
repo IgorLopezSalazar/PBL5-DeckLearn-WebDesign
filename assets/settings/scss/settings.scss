@@ -56,8 +56,6 @@ a{
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 
     &:hover{
-        background-color: $darkened-for-white-buttons-color;
-        border-radius: $settings-button-radius;
         transition-delay: 0.2s;
     }
 }

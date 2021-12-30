@@ -22,8 +22,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-rows: 1fr auto;
-  grid-template-areas: "center-content"
- "bottom-nav"; }
+  grid-template-areas: "center-content" "bottom-nav"; }
 
 .left-nav {
   background-color: #46B6A0;
@@ -240,7 +239,8 @@ input[type="checkbox"] {
     flex-direction: column; }
   .settings-selector__screens__list a:hover {
     background-color: #DBDFDF;
-    border-radius: 0 1.3rem 1.3rem 0; }
+    border-radius: 0 1.3rem 1.3rem 0;
+    transition-delay: 0.2s; }
 
 a {
   text-decoration: none;
@@ -249,10 +249,7 @@ a {
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
   a:hover {
-    background-color: #DBDFDF;
-    border-radius: 0 1.3rem 1.3rem 0;
     transition-delay: 0.2s; }
-
 
 .selected {
   border-left: #46B6A0 solid 2px; }
