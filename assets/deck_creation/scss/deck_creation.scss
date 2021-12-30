@@ -102,6 +102,7 @@
 
     &:hover{
         background-color: $darkened-for-white-buttons-color;
+        transition-delay: 0.2s;
     }
 
     > img {
@@ -134,6 +135,7 @@
 
     &:hover{
         background-color: $darkened-decklearn-color;
+        transition-delay: 0.2s;
     }
 }
 
@@ -167,6 +169,7 @@
 
             &:hover{
                 background-color: $darkened-tags-color;
+                transition-delay: 0.2s;
             }
         }
     }

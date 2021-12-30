@@ -21,8 +21,10 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center; }
-  .profile-nav__center p {
-    font-size: 1.2rem; }
+  .profile-nav__center a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer; }
 
 .profile-data {
   padding-top: 1.5rem;
@@ -62,7 +64,8 @@
     .button-follow {
       padding: 0.2rem 4rem 0.2rem 4rem; } }
   .button-follow:hover {
-    background-color: #007e68; }
+    background-color: #007e68;
+    transition-delay: 0.2s; }
 
 .button-following {
   background-color: #FFFFFF !important;

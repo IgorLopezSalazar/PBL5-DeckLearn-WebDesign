@@ -48,6 +48,7 @@ a{
     &:hover{
         background-color: $darkened-for-white-buttons-color;
         border-radius: $settings-button-radius;
+        transition-delay: 0.2s;
     }
 }
 
@@ -69,6 +70,7 @@ a{
     &:hover{
         background-color: $darkened-for-white-buttons-color;
         border-radius: $button-radius;
+        transition-delay: 0.2s;
     }
 }
 
