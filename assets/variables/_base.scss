@@ -38,31 +38,34 @@ body {
         align-items: center;
         justify-content: space-between;
 
-        > a {
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-            text-decoration: none;
-            color: $nav-bar-items-color;
-
-            &:hover{
-                background-color: $darkened-decklearn-color;
-                border-radius: $button-radius;
-                transition: 0.2s;
-            }
-
-            > img {
-                display: inline-block;
-                width: 2rem;
-            }
-
-            > li {
-                display: none;
-                text-align: left;
-                justify-content: center;
-                height: 100%;
-                font-size: 1.3rem;
-                font-weight: 100;
+        > li {
+            > a{
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                text-decoration: none;
+                color: $nav-bar-items-color;
+    
+                &:hover{
+                    background-color: $darkened-decklearn-color;
+                    border-radius: $button-radius;
+                    transition: 0.2s;
+                }
+    
+                > img {
+                    display: inline-block;
+                    width: 2rem;
+                }
+    
+                > span {
+                    display: none;
+                    text-align: left;
+                    justify-content: center;
+                    color: $text-color;
+                    height: 100%;
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                }
             }
         }
     }
@@ -134,7 +137,7 @@ body {
         align-items: center;
         flex-direction: column;
 
-        > a > li {
+        li > a > span {
             display:none;
         }
     }
@@ -149,31 +152,21 @@ body {
         padding: 0;
     }
 
-    .nav-bar__list{
-        align-items: normal;
-
-        > a > li {
-            display:inline-block;
-        }
-    }
-
     body{
         grid-template-columns: 1fr 6fr;
         grid-template-areas: none;
     }
 
-    .nav-bar__list {
-        > a {
-            > li {
-                padding: 0.2rem 0.2rem 0.2rem 0.5rem;
-            }
-        }
-    }
-
     .nav-bar {
         &__list{
-            > a {
+            align-items: normal;
+            li > a {
                 padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+
+                > span {
+                    padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+                    display:inline-block;
+                }
             }
         }
     }
