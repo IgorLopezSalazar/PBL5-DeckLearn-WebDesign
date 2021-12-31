@@ -54,7 +54,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -250,7 +250,7 @@ body {
   cursor: pointer; }
   .creation-button:hover {
     background-color: #DBDFDF;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
   .creation-button > img {
     width: 1.7rem;
     margin-right: 0.5rem; }
@@ -275,7 +275,7 @@ body {
   white-space: nowrap; }
   .custom-button:hover {
     background-color: #007e68;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .deck-categories {
   padding-top: 3rem;
@@ -300,7 +300,7 @@ body {
         cursor: pointer; }
       .deck-categories__list > button:hover {
         background-color: gainsboro;
-        transition-delay: 0.2s; }
+        transition: 0.2s; }
 
 .create-deck {
   display: flex;
@@ -321,7 +321,7 @@ body {
     white-space: nowrap; }
     .create-deck__button:hover {
       background-color: #007e68;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
 
 .categories-bar {
   width: 100%; }

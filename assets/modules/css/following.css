@@ -54,7 +54,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -262,7 +262,7 @@ body {
       padding: 0.2rem 4rem 0.2rem 4rem; } }
   .custom-button:hover {
     background-color: #007e68;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .container__following {
   display: grid;

@@ -104,7 +104,7 @@ main {
 
     &:hover{
         background-color: $darkened-for-white-buttons-color;
-        transition-delay: 0.2s;
+        transition: 0.2s;
     }
 }
 
@@ -115,7 +115,7 @@ main {
 
     &:hover{
         text-decoration: underline;
-        transition-delay: 0.2s;
+        transition: 0.2s;
     }
 }
 
