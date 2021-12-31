@@ -54,7 +54,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -261,13 +261,13 @@ body {
     border-radius: 0 0 0 5rem; }
     .card-content__buttons-pass:hover {
       background-color: #007e68;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
   .card-content__buttons-fail {
     background-color: rgba(205, 1, 1, 0.69);
     border-radius: 0 0 5rem 0; }
     .card-content__buttons-fail:hover {
       background-color: #cd0101;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
 
 @media (min-width: 1024px) {
   .card-content {

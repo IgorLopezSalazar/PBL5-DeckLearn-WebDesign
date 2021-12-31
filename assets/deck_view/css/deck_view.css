@@ -46,7 +46,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -220,12 +220,12 @@ body {
     white-space: nowrap; }
     .deck-view__buttons a:hover {
       background-color: #007e68;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
   .deck-view__buttons :last-child {
     background-color: rgba(205, 1, 1, 0.69); }
     .deck-view__buttons :last-child:hover {
       background-color: #cd0101;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
 
 .info {
   padding-left: 0;
@@ -263,7 +263,7 @@ body {
       font-weight: 700; }
       .info__button a:hover {
         background-color: #007e68;
-        transition-delay: 0.2s; }
+        transition: 0.2s; }
   .info__studiesNum {
     text-align: right; }
 

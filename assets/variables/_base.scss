@@ -48,7 +48,7 @@ body {
             &:hover{
                 background-color: $darkened-decklearn-color;
                 border-radius: $button-radius;
-                transition-delay: 0.2s;
+                transition: 0.2s;
             }
 
             > img {

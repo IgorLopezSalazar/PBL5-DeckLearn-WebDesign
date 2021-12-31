@@ -54,7 +54,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -240,7 +240,7 @@ input[type="checkbox"] {
   .settings-selector__screens__list a:hover {
     background-color: #DBDFDF;
     border-radius: 0 1.3rem 1.3rem 0;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 a {
   text-decoration: none;
@@ -249,7 +249,7 @@ a {
   align-items: center;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
   a:hover {
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .selected {
   border-left: #46B6A0 solid 2px; }
@@ -265,7 +265,7 @@ a {
   #logout:hover {
     background-color: #DBDFDF;
     border-radius: 1.3rem;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .settings__top-title {
   border-bottom: #BAB8B8 1px solid;
@@ -314,7 +314,7 @@ a {
         padding: 0.2rem 4rem 0.2rem 4rem; } }
     .profile-photo__button:hover {
       background-color: #007e68;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
 
 .custom-input {
   border: 0;
@@ -345,7 +345,7 @@ a {
       padding: 0.2rem 4rem 0.2rem 4rem; } }
   .custom-submit:hover, .altered-custom-submit:hover {
     background-color: #007e68;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .altered-custom-submit {
   grid-column-start: span 2; }

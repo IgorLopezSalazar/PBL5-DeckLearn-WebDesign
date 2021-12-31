@@ -54,7 +54,7 @@ body {
     .nav-bar__list > a:hover {
       background-color: #007e68;
       border-radius: 1.3rem;
-      transition-delay: 0.2s; }
+      transition: 0.2s; }
     .nav-bar__list > a > img {
       display: inline-block;
       width: 2rem; }
@@ -257,4 +257,4 @@ body {
   background-color: #01CDA9; }
   .card-content a:hover, .card-content__img a:hover, .card-content__img__noQ a:hover {
     background-color: #007e68;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }

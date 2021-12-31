@@ -65,7 +65,7 @@
       padding: 0.2rem 4rem 0.2rem 4rem; } }
   .button-follow:hover {
     background-color: #007e68;
-    transition-delay: 0.2s; }
+    transition: 0.2s; }
 
 .button-following {
   background-color: #FFFFFF !important;

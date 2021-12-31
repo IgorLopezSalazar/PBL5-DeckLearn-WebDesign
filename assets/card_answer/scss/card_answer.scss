@@ -11,7 +11,7 @@
 
         &:hover{
             background-color: $darkened-decklearn-color;
-            transition-delay: 0.2s;
+            transition: 0.2s;
         }
     }
     
@@ -21,7 +21,7 @@
 
         &:hover{
             background-color: $darkened-red-color;
-            transition-delay: 0.2s;
+            transition: 0.2s;
         }
     }
 }
