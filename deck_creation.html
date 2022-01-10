@@ -6,62 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deack Learn - Deck Creation</title>
-    <link rel="stylesheet" href="assert/main/css/main.css">
-    <link rel="stylesheet" href="assert/modules/css/home.css">
-    <link rel="stylesheet" href="assert/deck_creation/css/deck_creation.css">
+    <link rel="stylesheet" href="assets/modules/css/home.css">
+    <link rel="stylesheet" href="assets/deck_creation/css/deck_creation.css">
+    <script src="js/textarea.js"></script>
 </head>
 
 <body>
     <aside class="left-nav">
         <header>
-            <img src="images/letterLogo.svg" alt="Logo">
+            <a href="">
+                <img src="images/letterLogo.svg" alt="Logo">
+            </a> 
         </header>
-        <main class="nav-bar">
+        <div class="nav-bar">
             <ul class="nav-bar__list">
-                <a href="">
-                    <img src="images/icons/Home.svg" alt="">
-                    <li>Home</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/Home.svg" alt="Home">
+                        <span>Home</span>
+                    </a>
+                </li>
 
-                <a href="">
-                    <img src="images/icons/CreateDeck_select.svg" alt="">
-                    <li>Create deck</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/CreateDeck.svg" alt="Create Deck">
+                        <span>Create deck</span>
+                    </a>
+                </li>
 
-                <a href="">
-                    <img src="images/icons/StudySessions.svg" alt="">
-                    <li>Study sessions</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Profile.svg" alt="">
-                    <li>Profile</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Stats.svg" alt="">
-                    <li>Stats</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Settings.svg" alt="">
-                    <li>Settings</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/StudySessions_select.svg" alt="Study Sessions">
+                        <span>Study sessions</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Profile.svg" alt="Profile">
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Stats.svg" alt="User Stats">
+                        <span>Stats</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Settings.svg" alt="Settings">
+                        <span>Settings</span>
+                    </a>
+                </li>
+
             </ul>
-        </main>
+        </div>
     </aside>
 
     <main class="center-screen">
         <nav class="top-nav">
-            <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search for names.."
-                title="Type in a name" class="search-bar">
             <div class="top-nav__profile">
                 <img src="images/profilePic.jpg" alt="">
-                <span>Izan24</span>
+                <a tabindex="0">Izan24</a>
             </div>
         </nav>
 
-        <section class="content-container">
-            <section class="content">
+        <div class="content-container">
+            <div class="content">
                 <section class="deck-creation-section">
-                    <h2>Search Results</h2>
+                    <h2>Create a deck</h2>
 
                     <div class="deck-creation-section__list">
                         <div class="deck-creation">
@@ -75,10 +91,10 @@
                             <div>
                                 <h4>Description:</h4>
 
-                                <textarea name="Description" rows="4" cols="100" placeholder="Description"
-                                class="card-creation__data"></textarea>
+                                <textarea name="Description" cols="50" rows="1" placeholder="Description"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
                             </div>
-                            <button class="creation-button"><img src="images/letterLogo.svg" alt="">Upload
+                            <button class="creation-button"><img src="images/icons/Upload.svg" alt="">Upload
                                 image</button>
                         </div>
 
@@ -86,47 +102,51 @@
                             <h4>Cards:</h4>
 
                             <label>Card number: 0</label>
+                            <div id="question-answer">
+                                <textarea name="Question" cols="50" rows="1" placeholder="Question"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
 
-                            <textarea name="Question" rows="4" cols="100" placeholder="Question"
-                                class="card-creation__data"></textarea>
+                                <textarea name="Answer" cols="50" rows="1" placeholder="Answer"
+                                class="card-creation__data card-creation__data__of-hidden"></textarea>
+                            </div>
 
-                            <textarea name="Answer" rows="4" cols="100" placeholder="Answer"
-                            class="card-creation__data"></textarea>
 
-                            <button class="creation-button"><img src="images/letterLogo.svg" alt="">Upload
-                                image</button>
-                        </div>
+                            <div id="buttons">
+                                <button class="creation-button"><img src="images/icons/Upload.svg" alt="">Upload
+                                    image</button>
+                                <button class="custom-button">Add Card</button>
+                            </div>
 
-                        <div class="add-card">
-                            <button class="custom-button">Add Card</button>
                         </div>
                     </div>
                 </section>
-                <section class="deck-categories">
+                <div class="deck-categories">
                     <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search categories.."
                         title="Type in a name" class="search-bar categories-bar">
 
                     <div class="deck-categories__list">
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
-                        <button><img src="images/letterLogo.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
+                        <button><img src="images/icons/x.svg" alt="">History</button>
                     </div>
-                </section>
+                </div>
 
                 <div class="create-deck">
                     <button class="create-deck__button">Create Deck</button>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
 </body>
 

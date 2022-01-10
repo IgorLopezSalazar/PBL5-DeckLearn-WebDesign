@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="assert/main/css/main.css">
-    <link rel="stylesheet" href="assert/register/css/register.css">
+    <link rel="stylesheet" href="assets/register/css/register.css">
+    <script src="js/checkbox.js"></script>
 </head>
 
 <body>
@@ -25,12 +25,12 @@
                         <input type="text" class="custom-input" placeholder="Username">
                         <input type="password" class="custom-input" placeholder="Password">
                         <input type="password" class="custom-input" placeholder="Confirm Password">
-                        <div class="checkboxes">
+                        <div class="checkboxes" id="checkboxes">
                             <div class="bordered-checkbox">
-                                <input type="checkbox"  id="check2">
-                                <label for="check2"></label>
+                                <input type="checkbox"  id="check2" class="custom-check">
+                                <label for="check2" tabindex="0" class="custom-check__label"></label>
                             </div>
-                            <label for="">Show password</label>
+                            <label for="checkboxes">Show password</label>
                         </div>
                     </div>
                     <input type="submit" class="custom-submit" value="Create account">

@@ -6,57 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deack Learn - Profile Settings</title>
-    <link rel="stylesheet" href="assert/main/css/main.css">
-    <link rel="stylesheet" href="assert/settings/css/settings.css">
+    <link rel="stylesheet" href="assets/settings/css/settings.css">
 </head>
 
 <body>
     <aside class="left-nav">
         <header>
-            <img src="images/letterLogo.svg" alt="Logo">
+            <a href="">
+                <img src="images/letterLogo.svg" alt="Logo">
+            </a> 
         </header>
-        <main class="nav-bar">
+        <div class="nav-bar">
             <ul class="nav-bar__list">
-                <a href="">
-                    <img src="images/icons/Home.svg" alt="">
-                    <li>Home</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/Home.svg" alt="Home">
+                        <span>Home</span>
+                    </a>
+                </li>
 
-                <a href="">
-                    <img src="images/icons/CreateDeck_select.svg" alt="">
-                    <li>Create deck</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/CreateDeck.svg" alt="Create Deck">
+                        <span>Create deck</span>
+                    </a>
+                </li>
 
-                <a href="">
-                    <img src="images/icons/StudySessions.svg" alt="">
-                    <li>Study sessions</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Profile.svg" alt="">
-                    <li>Profile</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Stats.svg" alt="">
-                    <li>Stats</li>
-                </a>
-                <a href="">
-                    <img src="images/icons/Settings.svg" alt="">
-                    <li>Settings</li>
-                </a>
+                <li>
+                    <a href="">
+                        <img src="images/icons/StudySessions_select.svg" alt="Study Sessions">
+                        <span>Study sessions</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Profile.svg" alt="Profile">
+                        <span>Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Stats.svg" alt="User Stats">
+                        <span>Stats</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="images/icons/Settings.svg" alt="Settings">
+                        <span>Settings</span>
+                    </a>
+                </li>
+
             </ul>
-        </main>
+        </div>
     </aside>
 
     <main class="center-screen">
         <nav class="top-nav">
             <div class="top-nav__profile">
                 <img src="images/profilePic.jpg" alt="The profile picture of the user">
-                <span>Izan24</span>
+                <a tabindex="0">Izan24</a>
             </div>
         </nav>
 
-        <section class="content-container">
-            <section class="content">
+        <div class="content-container">
+            <div class="content">
                 <section class="settings-content-section">
                     <h1 class="settings__top-title">Settings</h1>
                     <div>
@@ -77,7 +94,7 @@
                             <div class="settings-selector__logout">
                                 <nav>
                                     <a href="" id="logout">
-                                        <img src="images/icons/StudySessions.svg" alt="">
+                                        <img src="images/icons/Log_out.svg" alt="">
                                         <p>Log out</p>
                                     </a>               
                                 </nav>
@@ -93,24 +110,24 @@
                             </div>
                             <div class="user-data-form">
                                 <form action="" class="grided-form">
-                                    <label for="">Name: </label>
-                                    <input type="text" class="custom-input" placeholder="Name">
-                                    <label for="">Surname: </label>
-                                    <input type="text" class="custom-input" placeholder="Surname">
-                                    <label for="">Username: </label>
-                                    <input type="text" class="custom-input" placeholder="Username">
-                                    <label for="">Purpose: </label>
-                                    <input type="text" class="custom-input" placeholder="Purpose">
-                                    <label for="">City: </label>
-                                    <input type="text" class="custom-input" placeholder="City">
+                                    <label for="name">Name: </label>
+                                    <input type="text" class="custom-input" placeholder="Name" id="name">
+                                    <label for="surname">Surname: </label>
+                                    <input type="text" class="custom-input" placeholder="Surname" id="surname">
+                                    <label for="username">Username: </label>
+                                    <input type="text" class="custom-input" placeholder="Username" id="username">
+                                    <label for="purpose">Purpose: </label>
+                                    <input type="text" class="custom-input" placeholder="Purpose" id="purpose">
+                                    <label for="city">City: </label>
+                                    <input type="text" class="custom-input" placeholder="City" id="city">
                                     <input type="submit" class="custom-submit" value="Save settings">
                                 </form>
                             </div>
                         </div>  
                     </div>
                 </section>
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
 </body>
 
