@@ -62,7 +62,7 @@
 }
 
 .card-content__img{
-    > div {
+    &__div {
         display: flex;
         flex-direction: column;
         gap: 1rem;

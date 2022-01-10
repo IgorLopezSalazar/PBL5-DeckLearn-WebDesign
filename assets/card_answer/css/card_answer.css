@@ -219,12 +219,12 @@ body {
     text-decoration-line: none;
     color: white; }
 
-.card-content__img > div {
+.card-content__img__div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center; }
-  .card-content__img > div > img {
+  .card-content__img__div > img {
     width: 60%;
     border-radius: 1rem; }
 
@@ -255,6 +255,7 @@ body {
 .card-content__buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   width: 100%; }
   .card-content__buttons-pass {
     background-color: #01CDA9;

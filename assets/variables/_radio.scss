@@ -1,5 +1,5 @@
-input[type="radio"]{
-    display: none;
+.custom-radio{
+    opacity: 0;
 
     + label {
         position: relative;
@@ -11,7 +11,7 @@ input[type="radio"]{
         cursor: pointer;
       }
 
-    &:checked{
+    &:checked, &:focus{
         + label {
             background-color: $radio-inside-color;
             color: $radio-border-color;
